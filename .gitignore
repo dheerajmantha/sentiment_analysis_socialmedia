@@ -1,0 +1,9 @@
+﻿# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+pip-wheel-metadata/
+
+# Vercel
+.vercel/
