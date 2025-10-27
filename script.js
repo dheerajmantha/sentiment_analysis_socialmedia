@@ -12,6 +12,7 @@
 
         resultsOutput.textContent = 'Analyzing...';
         analyzeButton.disabled = true;
+        analyzeButton.textContent = 'Analyzing...';
 
         try {
             const response = await fetch('/api/analyze', {
@@ -37,6 +38,7 @@
             resultsOutput.textContent = `An error occurred: ${error.message}`;
         } finally {
             analyzeButton.disabled = false;
+            analyzeButton.textContent = 'Analyze Sentiment';
         }
     });
 });
